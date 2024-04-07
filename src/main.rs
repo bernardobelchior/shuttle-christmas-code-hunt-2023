@@ -1,5 +1,6 @@
 mod ex1;
 mod ex4;
+mod ex5;
 
 use axum::{http::StatusCode, routing::get, Router};
 
