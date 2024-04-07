@@ -18,7 +18,8 @@ async fn main() -> shuttle_axum::ShuttleAxum {
         .route("/", get(hello_world))
         .route("/-1/error", get(internal_server_error))
         .nest("/1", ex1::router())
-        .nest("/4", ex4::router());
+        .nest("/4", ex4::router())
+        .nest("/5", ex5::router());
 
     Ok(router.into())
 }
